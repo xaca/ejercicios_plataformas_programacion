@@ -1,4 +1,7 @@
 <?php
+	//var_dump($_POST);
 	$salt = "MATRIX";
-	echo md5($slat.$_POST["clave1"]);
+	$respuesta = array();
+	$respuesta["clave"]=md5($salt.$_POST["clave1"]);
+	echo json_encode($respuesta);
 ?>
