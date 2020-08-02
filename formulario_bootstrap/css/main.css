@@ -1,3 +1,7 @@
 body{
 	background: grey;
 }
+.logo{
+	text-align: center;
+	background: purple;
+}

@@ -20,29 +20,18 @@
 			   // check if the form is valid
 			   var valid = pst.validate(); // returns true or false
          frm.classList.add("was-validated");
-         procesarPassword();
 			});
       frm.addEventListener('reset', function (e) {
         frm.classList.remove("was-validated");
       });
 		};
-	 //https://davidwalsh.name/fetch
-    //https://developer.mozilla.org/es/docs/Web/API/Fetch_API
-    function procesarPassword(){//Explicar las dos formas de consumir el script por el for o por acá
-      // url (required), options (optional)
-      fetch('scripts/script.php', {
-        method: 'post',
-        body: new FormData(frm)
-      }).then(function(response) {
-        console.dir(response);
-      }).catch(function(err) {
-        // Error :(
-      });
-    }
+
 	</script>
 </head>
 <body>
-
+  <div class="logo">
+    <img src="img/logo_xaca_solutions.png" alt="">
+  </div>
 <form id="form-demo" novalidate method="post" class="container">
 	<input type="hidden" />
   <div class="form-group">
